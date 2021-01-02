@@ -13,11 +13,7 @@ def home():
 def predict():
     input_features = [float(x) for x in request.form.values()]
     value = np.array(input_features)
-    
-     if input_features<0  or input_features>24:
-        return render_template('index.html', Prediction_text = f"Please enter valid hours between 1 to 24 if you live on the Earth.")
 
-    
     output = model.predict([value])[0][0].round(2)
     return render_template('index.html', Prediction_text = f"you will get {output}% marks, when you do study {input_features} hours per day.")
 
