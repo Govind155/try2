@@ -21,16 +21,16 @@ h1{  margin: -30px;
 	 margin-bottom: 30px;
 }
 h2{
-    font-size: 30px;
-    text-align: center;
+   text-align: center;
+    font-size: 20px;
 }
 h3{
-    font-size: 15px;
     text-align: center;
+    font-size: 15px;
 }
 .login-box p{
         font-size: 25px;
-		text-align: center;
+	text-align: center;
 }
 .login-box input{
     width: 100%;
