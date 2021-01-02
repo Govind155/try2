@@ -10,6 +10,7 @@
             <form action="{{url_for('predict')}}" method = "post">
             <p>Enter Your Study Hours Per Day</p>
             <input type="number" name="Study" placeholder="Enter Study Hour">
+            <input type="number" id="Study" name="Study" min="0" max="24"><br> 
             <input type="submit" value="Predict"> 
             </form>
             <br>
@@ -17,7 +18,7 @@
             <h2>{{ Prediction_text }}</h2>
         
           <br>
-         <h2>Made with &#128153; by Govind Tadvi.</h2>
+         <h3>Made with &#128153; by Govind Tadvi.</h3>
         </div>
     
     </body>
