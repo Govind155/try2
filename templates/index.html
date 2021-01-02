@@ -9,8 +9,7 @@
         <h1>Marks Predictor</h1>
             <form action="{{url_for('predict')}}" method = "post">
             <p>Enter Your Study Hours Per Day</p>
-            <input type="number" name="Study" placeholder="Enter Study Hour">
-            <input type="number" id="Study" name="Study" min="0" max="24"><br> 
+            <input type="number" name="Study" placeholder="Enter Study Hour" min="0" max="24">
             <input type="submit" value="Predict"> 
             </form>
             <br>
